@@ -78,10 +78,10 @@ else
 fi > >($results_filter | ${0:A:h}/tap-colorizer.zsh) 
 
 # Overwrite _zsh_highlight_add_highlight so we get the key itself instead of the style
-_zsh_highlight_add_highlight()
-{
-  region_highlight+=("$1 $2 $3")
-}
+#_zsh_highlight_add_highlight()
+#{
+#  region_highlight+=("$1 $2 $3")
+#}
 
 # Activate the highlighter.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=($1)
@@ -187,6 +187,12 @@ run_test() {
     rm -rf -- "$__tests_tempdir"
   }
 }
+
+local test_setup=${0:h:h}/highlighters/$1/test-setup.zsh
+
+if [[ -r $test_setup ]]; then
+    source $test_setup
+fi
 
 # Process each test data file in test data directory.
 integer something_failed=0

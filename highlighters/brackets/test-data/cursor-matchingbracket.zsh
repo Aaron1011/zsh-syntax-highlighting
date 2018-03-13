@@ -29,9 +29,10 @@
 
 unsorted=1
 
-ZSH_HIGHLIGHT_STYLES[bracket-level-1]=
-ZSH_HIGHLIGHT_STYLES[bracket-level-2]=
-ZSH_HIGHLIGHT_STYLES[bracket-level-3]=
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]=bracket-level-1
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]=bracket-level-2
+ZSH_HIGHLIGHT_STYLES[bracket-level-3]=bracket-level-3
+ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=cursor-matchingbracket
 
 BUFFER=': ((( )))'
 CURSOR=2 # cursor is zero-based

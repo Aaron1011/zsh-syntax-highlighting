@@ -29,7 +29,8 @@
 
 unsorted=1
 
-ZSH_HIGHLIGHT_STYLES[bracket-level-1]=
+ZSH_HIGHLIGHT_STYLES[bracket-error]=bracket-error
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]=bracket-level-1
 
 BUFFER='echo {x})'
 
